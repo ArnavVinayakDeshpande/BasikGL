@@ -5,52 +5,52 @@
  */
 
 /// @dir core
-#include "../../src/core/core.h"
-#include "../../src/core/error_handler.h"
-#include "../../src/core/logger.h"
-#include "../../src/core/convert_values.h"
+#include <core/core.h>
+#include <core/error_handler.h>
+#include <core/logger.h>
+#include <core/convert_values.h>
 
 /// @dir time
-#include "../../src/time/timespan.h"
-#include "../../src/time/clock.h"
+#include <time/timespan.h>
+#include <time/clock.h>
 
 /// @dir context
-#include "../../src/context/asset_manager.h"
-#include "../../src/context/context_properties.h"
-#include "../../src/context/render_context.h"
-#include "../../src/context/context_manager.h"
+#include <context/asset_manager.h>
+#include <context/context_properties.h>
+#include <context/render_context.h>
+#include <context/context_manager.h>
 
 /// @dir window
-#include "../../src/window/window_attributes.h"
-#include "../../src/window/window_properties.h"
-#include "../../src/window/window_callbacks.h"
-#include "../../src/window/window.h"
+#include <window/window_attributes.h>
+#include <window/window_properties.h>
+#include <window/window_callbacks.h>
+#include <window/window.h>
 
 /// @dir gfx
-#include "../../src/gfx/vertex.h"
-#include "../../src/gfx/vertexbuffer.h"
-#include "../../src/gfx/indexbuffer.h"
-#include "../../src/gfx/vertexarray.h"
-#include "../../src/gfx/shader.h"
+#include <gfx/vertex.h>
+#include <gfx/vertexbuffer.h>
+#include <gfx/indexbuffer.h>
+#include <gfx/vertexarray.h>
+#include <gfx/shader.h>
 
 /// @dir sprite
-#include "../../src/sprite/sprite.h"
+#include <sprite/sprite.h>
 
 /// @dir gfx/texture
-#include "../../src/gfx/texture/texture.h"
-#include "../../src/gfx/texture/texture2d.h"
+#include <gfx/texture/texture.h>
+#include <gfx/texture/texture2d.h>
 
 /// @dir input
-#include "../../src/input/keyinput.h"
-#include "../../src/input/mouseinput.h"
-#include "../../src/input/cursor.h"
+#include <input/keyinput.h>
+#include <input/mouseinput.h>
+#include <input/cursor.h>
 
 /// @dir camera
-#include "../../src/camera/camera.h"
-#include "../../src/camera/gui_camera.h"
-#include "../../src/camera/perspective_camera.h"
-#include "../../src/camera/player_camera.h"
+#include <camera/camera.h>
+#include <camera/gui_camera.h>
+#include <camera/perspective_camera.h>
+#include <camera/player_camera.h>
 
 /// @dir utils
-#include "../../src/utils/utils.h"
-#include "../../src/utils/uuid_generator.h"
+#include <utils/utils.h>
+#include <utils/uuid_generator.h>
