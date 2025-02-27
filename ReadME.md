@@ -24,7 +24,7 @@ BasikGL is a lightweight, modular OpenGL graphics library designed to simplify r
 ✅ **Asset Management** – Uses a UUID-based asset manager to handle resources efficiently.  
 ✅ **Texture Handling** – Built-in support for texture loading and binding.  
 ✅ **Window Management** – Uses GLFW for cross-platform windowing.  
-✅ **Logging System** – Console and file logging with different log levels.  
+✅ **Logging System** – Console and file logging.  
 <!-- ✅ **Model Loading** – Supports `.obj` and `.gltf` (future support planned).   -->
 
 ## **Installation**
@@ -124,7 +124,7 @@ int32_t main(int32_t argc, const char* argv[]) {
     // bind the shader
     shdr->bind();
 
-    /* shutdown and cleaup*/
+    /* shutdown and cleanup*/
 }
 ```
 
@@ -151,7 +151,7 @@ int32_t main(int32_t argc, const char* argv[]) {
     // bind the shader
     vao->bind();
 
-    /* shutdown and cleaup*/
+    /* shutdown and cleanup*/
 }
 ```
 
@@ -166,6 +166,8 @@ int32_t main(int32_t argc, const char* argv[]) {
 - [ ] Adding a **Material** system
 - [ ] Adding a **Model** system
 - [ ] Adding a **Model Loading** system
+- [ ] Adding **Different Log Levels**
+- [ ] Adding **Different Error Notification Levels**
 
 ## **License**
 ```

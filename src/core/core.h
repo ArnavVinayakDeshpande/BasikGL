@@ -40,13 +40,13 @@
  * @def BSK_LIB_VERSION_MAJOR
  * @brief Major version of current BasikGL library source code.
  */
-#define BSK_LIB_VERSION_MAJOR       0
+#define BSK_LIB_VERSION_MAJOR       1
 
 /**
  * @def BSK_LIB_VERSION_MAINOR
  * @brief Minor version of current BasikGL library source code.
  */
-#define BSK_LIB_VERSION_MINOR       5
+#define BSK_LIB_VERSION_MINOR       0
 
 /**
  * @def BSK_OPENGL_VERSION_MAJOR
