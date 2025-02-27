@@ -37,10 +37,16 @@ namespace bskgl {
          */
         ContextManager() = default;
 
+    public:
         /**
          * @brief Destructor
          */
         ~ContextManager();
+
+        ContextManager(const ContextManager& other) = delete;
+        ContextManager(ContextManager&& other) noexcept = delete;
+        ContextManager& operator=(const ContextManager& other) = delete;
+        ContextManager& operator=(ContextManager&& other) noexcept = delete;
 
     public:
         /**

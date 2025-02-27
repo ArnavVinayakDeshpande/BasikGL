@@ -35,10 +35,7 @@ namespace bskgl {
          * @param[in] win_prop Window properties.
          * @param[in] clr_color Clear color.
          */
-        ContextProperties(WindowProperties win_prop, Color clr_col = Color::black())
-            :
-            window_properties(std::move(win_prop)),
-            clear_color(clr_col) { }
+        ContextProperties(WindowProperties win_prop, Color clr_col = Color(255, 255, 255));
     };
 
 }

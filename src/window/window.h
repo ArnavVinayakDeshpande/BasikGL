@@ -345,6 +345,60 @@ namespace bskgl {
         Window& center_cursor_on_window();
 
         /**
+         * @brief Enables the given attribute.
+         * Ensure that only a single attribute is passed as a parameter, in case of an invalid input,
+         * the function returns safely.
+         * Supported attributes are  
+         *      WindowAttribute::Decorated, 
+         *      WindowAttribute::Resizable, 
+         *      WindowAttribute::Floating, 
+         *      WindowAttribute::AutoIconify,
+         *      WindowAttribute::FocusOnShow, 
+         *      WindowAttribute::MousePassthrough
+         * Some of these attributes are ignored for full screen windows. The new value will take effect if the window is later made windowed.
+         * Some of these attributes are ignored for windowed mode windows. The new value will take effect if the window is later made full screen.
+         * 
+         * @param[in] attribute Attribute to enable.
+         * 
+         * @retval Window&
+         * @returns Reference to the updated variable.
+         */
+        Window& enable_attribute(WindowAttribute attribute);
+
+        /**
+         * @brief Disables the given attribute.
+         * Ensure that only a single attribute is passed as a parameter, in case of an invalid input,
+         * the function returns safely.
+         * Supported attributes are  
+         *      WindowAttribute::Decorated, 
+         *      WindowAttribute::Resizable, 
+         *      WindowAttribute::Floating, 
+         *      WindowAttribute::AutoIconify,
+         *      WindowAttribute::FocusOnShow, 
+         *      WindowAttribute::MousePassthrough
+         * Some of these attributes are ignored for full screen windows. The new value will take effect if the window is later made windowed.
+         * Some of these attributes are ignored for windowed mode windows. The new value will take effect if the window is later made full screen.
+         * 
+         * @param[in] attribute Attribute to disable.
+         * 
+         * @retval Window&
+         * @returns Reference to the updated variable.
+         */
+        Window& disable_attribute(WindowAttribute attribute);
+
+        /**
+         * @brief Checks if an attribute is enabled.
+         * Ensure that only a single attribute is passed as a parameter.
+         * If an invalid attribute or multiple attributes are given, the function returns false.
+         * 
+         * @param[in] attribute Attribute to check.
+         * 
+         * @retval bool
+         * @returns Is the attribute enabled.
+         */
+        bool is_attribute_enabled(WindowAttribute attribute) const;
+
+        /**
          * @brief Polls window events.
          */
         static void poll_events();

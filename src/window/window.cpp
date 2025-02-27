@@ -424,6 +424,46 @@ namespace bskgl {
         return *this;
     }
 
+    Window& Window::enable_attribute(WindowAttribute attribute) {
+        if (attribute == WindowAttribute::None)
+            return *this;
+
+        int32_t glfw_value = glfw::convert(attribute);
+
+        if (glfw_value == -1)
+            return *this;
+
+        glfwSetWindowAttrib(m_window, glfw_value, GLFW_TRUE);
+
+        return *this;   
+    }
+    
+    Window& Window::disable_attribute(WindowAttribute attribute) {
+        if (attribute == WindowAttribute::None)
+            return *this;
+
+        int32_t glfw_value = glfw::convert(attribute);
+
+        if (glfw_value == -1)
+            return *this;
+
+        glfwSetWindowAttrib(m_window, glfw_value, GLFW_FALSE);
+
+        return *this;   
+    }
+
+    bool Window::is_attribute_enabled(WindowAttribute attribute) const {
+        if (attribute == WindowAttribute::None)
+            return false;
+
+        int32_t glfw_value = glfw::convert(attribute);
+
+        if (glfw_value == -1)
+            return false;
+
+        return glfwGetWindowAttrib(m_window, glfw_value) == GLFW_TRUE;
+    }
+
     void Window::poll_events() {
         glfwPollEvents();
     }

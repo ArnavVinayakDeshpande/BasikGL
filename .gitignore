@@ -1,8 +1,8 @@
 # Ignore all the build files
-/build
+build/*
 
 # Ignore test files
-/examples/test
+examples/test/*
 
 # Ignore .vscode files
-/.vscode
+.vscode/*
