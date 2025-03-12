@@ -62,7 +62,7 @@ int32_t main(int32_t argc, const char* argv[]) {
     bskgl::initialize();
 
     // get the context manager
-    auto ctx_manager = bskgl::ContextManager::instance();
+    auto& ctx_manager = bskgl::ContextManager::instance();
 
     // create a context
     bskgl::ContextProperties properties(
@@ -176,4 +176,4 @@ Version 2.0, January 2004
 ```
 
 ## **Bugs**
-- [ ] Clear color in constructor of **bskgl::ContextProperties** is not set properly.
+- ✅ Clear color in constructor of **bskgl::ContextProperties** is not set properly.
