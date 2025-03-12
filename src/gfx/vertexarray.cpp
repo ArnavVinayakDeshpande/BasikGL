@@ -128,6 +128,10 @@ namespace bskgl {
         return *this;
     }
 
+    bool VertexArray::does_ibuffer_exist() const {
+        return m_ibuffer->num_indices() > 0;
+    }
+
     void VertexArray::unbind() {
         glBindVertexArray(0);
         VertexBuffer::unbind();

@@ -10,6 +10,7 @@
 #include <unordered_map>
 #include <memory>
 
+#include <core/core.h>
 #include <context/render_context.h>
 #include <utils/uuid_generator.h>
 
@@ -24,6 +25,7 @@ namespace bskgl {
      * @brief Singleton class for creating and managing contexts.
      */
     class BSK_API ContextManager final {
+        friend void shutdown(); /// BasikGL Shutdown function
     public:
         /**
          * @typedef ContextHandle
@@ -84,6 +86,11 @@ namespace bskgl {
          */
         static ContextManager& instance();
     
+        /**
+         * @brief Delete the context manager.
+         */
+        static void shutdown();
+
     private:
         /**
          * @property ContextManager instance.

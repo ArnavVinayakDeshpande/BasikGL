@@ -13,6 +13,7 @@
 /// @dir time
 #include <time/timespan.h>
 #include <time/clock.h>
+#include <time/timer.h>
 
 /// @dir context
 #include <context/asset_manager.h>
@@ -32,6 +33,9 @@
 #include <gfx/indexbuffer.h>
 #include <gfx/vertexarray.h>
 #include <gfx/shader.h>
+
+/// @brief render
+#include <render/renderer.h>
 
 /// @dir sprite
 #include <sprite/sprite.h>

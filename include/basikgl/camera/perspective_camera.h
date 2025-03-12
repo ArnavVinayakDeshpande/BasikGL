@@ -27,12 +27,9 @@ namespace bskgl {
         /**
          * @brief Constructor
          * 
-         * @param[in] aspec_ratio Aspect ratio of the camera.
-         * @param[in] fov FOV of the camera in degrees, default value is 45.
-         * @param[in] near_plane Near clip distance of the camera in NDC, default value is 1.0.
-         * @param[in] far_plane Far clip distance of the camera in NDC, default value is 10.0.
+         * @param[in] camera_properties An instance of PerspectiveCameraProperties.
          */
-        explicit PerspectiveCamera(float aspect_ratio, float fov = 45.0f, float near_plane = 1.0f, float far_plane = 10.0f);
+        explicit PerspectiveCamera(PerspectiveCameraProperties camera_properties);
 
         /**
          * @brief Copy Constructor
@@ -164,6 +161,13 @@ namespace bskgl {
         [[nodiscard]]
         float pitch() const;
 
+        [[nodiscard]]
+        /**
+         * @retval PerspectiveCameraProperties
+         * @returns Perspective projection properties.
+         */
+        PerspectiveCameraProperties properties() const;
+
         /**
          * @brief Sets the position of the camera.
          * 
@@ -256,6 +260,16 @@ namespace bskgl {
          */
         PerspectiveCamera& set_pitch(float pitch_in_deg, bool constrain_pitch = true);
     
+        /**
+         * @brief Sets the camera properties.
+         * 
+         * @param[in] camera_properties Camera properties.
+         * 
+         * @retval PerspectiveCamera&
+         * @returns Reference to the updated variable.
+         */
+        PerspectiveCamera& set_properties(PerspectiveCameraProperties properties);
+
         /**
          * @brief Resets the camera back to the original position.
          * Resets position to (0, 0, 3), pointing at (0, 0, 0) with no yaw and no pitch.

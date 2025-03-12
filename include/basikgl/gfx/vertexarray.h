@@ -164,6 +164,12 @@ namespace bskgl {
         VertexArray& sync();
 
         /**
+         * @retval bool
+         * @returns True if the index buffer exists, else false.
+         */
+        bool does_ibuffer_exist() const;
+
+        /**
          * @brief Unbinds the currently bound vertex array.
          */
         static void unbind();

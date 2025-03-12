@@ -5,8 +5,6 @@ namespace bskgl {
     ContextManager* ContextManager::s_instance = nullptr;
 
     ContextManager::~ContextManager() {
-        if (s_instance)
-            delete s_instance;
     }
 
     ContextManager& ContextManager::instance() {
@@ -32,6 +30,11 @@ namespace bskgl {
         auto it = m_contexts.find(uuid);
         if (it != m_contexts.end())
             m_contexts.erase(it);
+    }
+
+    void ContextManager::shutdown() {
+        if (s_instance)
+            delete s_instance;
     }
 
 }

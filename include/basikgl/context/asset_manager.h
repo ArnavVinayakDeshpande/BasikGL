@@ -64,7 +64,7 @@ namespace bskgl {
         
         AssetManager(const AssetManager& other) = delete;
         AssetManager& operator=(const AssetManager& other) = delete;
-        AssetManager& operator=(AssetManager&& other) = delete;
+        AssetManager& operator=(AssetManager&& other) noexcept = delete;
 
         /**
          * @brief Creates an asset, see @class Asset in @headerfile gfx/asset.

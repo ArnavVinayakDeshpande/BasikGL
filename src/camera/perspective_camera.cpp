@@ -4,12 +4,12 @@
 
 namespace bskgl {
 
-    PerspectiveCamera::PerspectiveCamera(float aspect_ratio, float fov, float near_plane, float far_plane)
+    PerspectiveCamera::PerspectiveCamera(PerspectiveCameraProperties properties)
         : 
-        m_aspect_ratio(aspect_ratio), 
-        m_fov(fov), 
-        m_near_plane(near_plane), 
-        m_far_plane(far_plane) {
+        m_aspect_ratio(properties.aspect_ratio), 
+        m_fov(properties.fov), 
+        m_near_plane(properties.near_clip_distance), 
+        m_far_plane(properties.far_clip_distance) {
         m_update_camera_vectors();
     }
 
@@ -69,6 +69,10 @@ namespace bskgl {
         return m_pitch;
     }
 
+    PerspectiveCameraProperties PerspectiveCamera::properties() const {
+        return PerspectiveCameraProperties(m_aspect_ratio, m_fov, m_near_plane, m_far_plane);
+    }
+
     PerspectiveCamera& PerspectiveCamera::set_position(const glm::vec3& position) {
         m_position = position;
         
@@ -123,6 +127,15 @@ namespace bskgl {
         m_update_camera_vectors();        
 
         return *this;    
+    }
+
+    PerspectiveCamera& PerspectiveCamera::set_properties(PerspectiveCameraProperties properties) {
+        m_aspect_ratio = properties.aspect_ratio;
+        m_fov = properties.fov;
+        m_near_plane = properties.near_clip_distance;
+        m_far_plane = properties.far_clip_distance;
+        
+        return *this;
     }
 
     PerspectiveCamera& PerspectiveCamera::reset() {

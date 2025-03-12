@@ -16,7 +16,7 @@
 
 /**
  * @namespace bskgl
- * @brief Primary mainspace of BasikGL librar.y
+ * @brief Primary namespace of BasikGL library.
  */
 namespace bskgl {
 
@@ -237,7 +237,7 @@ namespace bskgl {
 #define BSK_CONSOLE_ERROR(msg)              bskgl::Logger::Console::error(msg, __FILE__, BSK_FUNCTION_SIGNATURE, __LINE__);
 
 /**
- * @def BSK_CONSOLE_LOG
+ * @def BSK_CONSOLE_INFO
  * @brief Logs given message to console.
  * It is meant to be used as a logging used by client to address users, not necessarily log matters related to the codebase itself.
  * 

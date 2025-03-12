@@ -116,7 +116,7 @@ namespace bskgl {
  * @param[in] cond Condition to check.
  * @param[in] msg Message to log if condition is false.
  */
-#define BSK_ASSERT(cond, msg)                       bskgl::ErrorHandler::assert_check(cond, msg, __FILE__, BSK_FUNCTION_SIGNATURE, __LINE__);
+#define BSK_ASSERT(cond, msg)                       bskgl::ErrorHandler::assert_check((cond), msg, __FILE__, BSK_FUNCTION_SIGNATURE, __LINE__);
 
 /**
  * @def BSK_VERIFY
@@ -126,4 +126,4 @@ namespace bskgl {
  * @param[in] cond Condition to check.
  * @param[in] msg Message to log if condition is false.
  */
-#define BSK_VERIFY(cond, msg)               bskgl::ErrorHandler::verify(cond, msg, __FILE__, BSK_FUNCTION_SIGNATURE, __LINE__);
+#define BSK_VERIFY(cond, msg)                       bskgl::ErrorHandler::verify((cond), msg, __FILE__, BSK_FUNCTION_SIGNATURE, __LINE__);
