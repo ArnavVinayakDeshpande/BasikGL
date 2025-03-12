@@ -31,7 +31,7 @@ int32_t main(int32_t argc, const char* argv[]) {
     bskgl::AssetManager::AssetHandle<bskgl::Shader> shader = context->asset_manager.get_asset<bskgl::Shader>(shader_uuid);
 
     // set a color uniform (if you want)
-    shader->set_uniform("u_color", glm::vec4(1.0f));
+    shader->set_uniform("u_color", bskgl::Color(128, 128, 128, 255));
 
     // create a triangle vertex array
     std::vector<bskgl::Vertex> triangle_vertices({
