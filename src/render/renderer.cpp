@@ -44,7 +44,7 @@ namespace bskgl {
         m_cached_va->bind();
 
         if (m_cached_va->does_ibuffer_exist()) {
-            glDrawElements(GL_TRIANGLES, m_cached_va->num_vertices(), GL_UNSIGNED_INT, nullptr);
+            glDrawElements(GL_TRIANGLES, m_cached_va->num_indices(), GL_UNSIGNED_INT, nullptr);
         } else {
             glDrawArrays(GL_TRIANGLES, 0, m_cached_va->num_vertices());
         }
