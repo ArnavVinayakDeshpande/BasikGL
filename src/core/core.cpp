@@ -6,6 +6,7 @@
 #include <core/core.h>
 #include <core/error_handler.h>
 #include <time/timespan.h>
+#include <context/context_manager.h>
 
 namespace bskgl {
 
@@ -52,6 +53,9 @@ namespace bskgl {
     void shutdown() {
         // set the initialized flag
         g_is_lib_initalized = false;
+
+        // delete the context
+        delete ContextManager::s_instance;
 
         // terminate glfw
         glfwTerminate();

@@ -15,6 +15,15 @@ namespace bskgl {
         m_vert_glid(glCreateShader(GL_VERTEX_SHADER)),
         m_pixel_glid(glCreateShader(GL_FRAGMENT_SHADER)),
         m_uniforms() {
+        if (vertex_source == "") {
+            BSK_ERROR("Invalid Vertex Shader Source given.");
+            return;
+        }
+        if (pixel_source == "") {
+            BSK_ERROR("Invalid Pixel Shader Source given.");
+            return;
+        }
+
         m_compile(vertex_source, pixel_source);
     }
 
@@ -25,6 +34,14 @@ namespace bskgl {
         m_vert_glid(glCreateShader(GL_VERTEX_SHADER)),
         m_pixel_glid(glCreateShader(GL_FRAGMENT_SHADER)),
         m_uniforms() {
+        if (vertex_path == "") {
+            BSK_ERROR("Invalid Vertex Shader Path given.");
+            return;
+        }
+        if (pixel_path == "") {
+            BSK_ERROR("Invalid Pixel Shader Path given.");
+            return;
+        }
         m_compile(utils::read_file(vertex_path), utils::read_file(pixel_path));
     }
 

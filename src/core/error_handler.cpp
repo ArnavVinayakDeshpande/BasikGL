@@ -57,7 +57,7 @@ namespace bskgl {
 
     void ErrorHandler::verify(bool condition, const std::string& message, const std::string& file, const std::string& func, int32_t line) {
         #if defined(BSK_DEBUG)
-            if (!condition) {
+            if (!(condition)) {
                 if (!disable_console_log) 
                     Logger::Console::error("[CRITICAL CHECK FAILED]" + message, file, func, line);
                 
@@ -66,7 +66,7 @@ namespace bskgl {
                 assert(condition);    
             }
         #else
-            if (!condition) {
+            if (!(condition)) {
                 if (!disable_console_log)
                     Logger::Console::error("[CRITICAL CHECK FAILED]" + message, file, func, line);
 

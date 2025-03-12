@@ -22,14 +22,18 @@ namespace bskgl {
         :
         window(properties.window_properties),
         asset_manager(*this),
+        renderer(*this),
         m_uuid(uuid) {
+        this->bind();
         this->set_clear_color(properties.clear_color);
     }
 
     RenderContext::RenderContext(RenderContext&& other) noexcept
         :
         window(std::move(other.window)),
-        asset_manager(std::move(other.asset_manager)) {
+        asset_manager(std::move(other.asset_manager)),
+        renderer(std::move(other.renderer)) {
+        this->bind();
         this->set_clear_color(other.clear_color());
     }
 

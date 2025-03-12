@@ -60,7 +60,7 @@ namespace bskgl {
          * @retval float
          * @returns Value of time span in seconds.
          */
-        float seconds() const;
+        float as_seconds() const;
 
         /**
          * @brief Returns value of time span.
@@ -68,7 +68,7 @@ namespace bskgl {
          * @retval float
          * @returns Value of time span in milliseconds.
          */
-        float milliseconds() const;
+        float as_milliseconds() const;
 
         /**
          * @brief Returns value of time span.
@@ -76,7 +76,7 @@ namespace bskgl {
          * @retval float
          * @returns Value of time span in microseconds.
          */
-        float microseconds() const;
+        float as_microseconds() const;
 
         /**
          * @brief Returns value of time span.
@@ -84,7 +84,7 @@ namespace bskgl {
          * @retval float
          * @returns Value of time span in nanoseconds.
          */
-        float nanoseconds() const;
+        float as_nanoseconds() const;
 
         /**
          * @brief Float operator

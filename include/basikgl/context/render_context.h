@@ -11,6 +11,7 @@
 #include <context/asset_manager.h>
 #include <context/gl_tests.h>
 #include <window/window.h>
+#include <render/renderer.h>
 #include <color/color.h>
 
 /**
@@ -38,6 +39,11 @@ namespace bskgl {
          * @property Asset Manager used for managing assets tied to this context.
          */
         AssetManager asset_manager;
+
+        /***
+         * @property Renderer associated with this context.
+         */
+        Renderer renderer;
 
     private:
         /**

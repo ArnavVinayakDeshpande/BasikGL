@@ -48,7 +48,7 @@ namespace bskgl {
     }
 
     PlayerCamera& PlayerCamera::strafe(PlayerStrafeDirection direction, Timespan deltatime) {
-        float velocity = m_speed * deltatime.seconds();
+        float velocity = m_speed * deltatime.as_seconds();
 
         switch (direction) {
             case PlayerStrafeDirection::CameraUp:

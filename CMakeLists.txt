@@ -33,7 +33,7 @@ add_subdirectory("tiny_obj_loader")
 include_directories("${CMAKE_CURRENT_SOURCE_DIR}/include")
 
 # Add src
-include_directories("include")
+include_directories("include/basikgl")
 include_directories("src")
 add_subdirectory("src")
 
