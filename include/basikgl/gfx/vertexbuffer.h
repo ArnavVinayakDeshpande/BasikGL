@@ -8,9 +8,9 @@
 
 #include <vector>
 
-#include <core/core.h>
-#include <gfx/vertex.h>
-#include <gfx/asset.h>
+#include <basikgl/core/core.h>
+#include <basikgl/gfx/vertex.h>
+#include <basikgl/gfx/asset.h>
 
 /**
  * @namespace bskgl

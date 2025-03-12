@@ -8,7 +8,7 @@
 
 #include <iostream>
 
-#include <core/core.h>
+#include <basikgl/core/core.h>
 
 /**
  * @namespace bksgl

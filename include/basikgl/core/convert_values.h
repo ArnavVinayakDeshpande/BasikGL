@@ -6,13 +6,13 @@
 
 #pragma once
 
-#include <core/core.h>
-#include <gfx/texture/texture.h>
-#include <context/gl_tests.h>
-#include <input/keyinput.h>
-#include <input/mouseinput.h>
-#include <input/cursor.h>
-#include <window/window_attributes.h>
+#include <basikgl/core/core.h>
+#include <basikgl/gfx/texture/texture.h>
+#include <basikgl/context/gl_tests.h>
+#include <basikgl/input/keyinput.h>
+#include <basikgl/input/mouseinput.h>
+#include <basikgl/input/cursor.h>
+#include <basikgl/window/window_attributes.h>
 
 /**
  * @namespace bskgl::opengl

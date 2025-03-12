@@ -1,7 +1,7 @@
 #pragma once
 
-#include <core/core.h>
-#include <context/asset_manager.h>
+#include <basikgl/core/core.h>
+#include <basikgl/context/asset_manager.h>
 
 namespace bskgl {
 

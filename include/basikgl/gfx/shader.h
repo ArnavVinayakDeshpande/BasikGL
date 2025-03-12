@@ -13,9 +13,9 @@
 
 #include <glm/glm.hpp>
 
-#include <core/core.h>
-#include <gfx/asset.h>
-#include <color/color.h>
+#include <basikgl/core/core.h>
+#include <basikgl/gfx/asset.h>
+#include <basikgl/color/color.h>
 
 /**
  * @namespace bskgl

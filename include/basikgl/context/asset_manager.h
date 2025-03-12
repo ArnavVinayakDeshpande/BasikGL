@@ -10,9 +10,9 @@
 #include <unordered_map>
 #include <vector>
 
-#include <core/core.h>
-#include <gfx/asset.h>
-#include <utils/uuid_generator.h>
+#include <basikgl/core/core.h>
+#include <basikgl/gfx/asset.h>
+#include <basikgl/utils/uuid_generator.h>
 
 /**
  * @namespace bskgl

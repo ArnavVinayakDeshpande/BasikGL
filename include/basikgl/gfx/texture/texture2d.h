@@ -6,9 +6,9 @@
 
 #pragma once
 
-#include <core/core.h>
-#include <sprite/sprite.h>
-#include <gfx/texture/texture.h>
+#include <basikgl/core/core.h>
+#include <basikgl/sprite/sprite.h>
+#include <basikgl/gfx/texture/texture.h>
 
 /**
  * @namespace bskgl

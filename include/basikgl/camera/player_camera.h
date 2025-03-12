@@ -8,8 +8,8 @@
 
 #include <glm/glm.hpp>
 
-#include <camera/camera.h>
-#include <time/timespan.h>
+#include <basikgl/camera/camera.h>
+#include <basikgl/time/timespan.h>
 
 /**
  * @namespace bskgl

@@ -10,7 +10,7 @@
 #include <string_view>
 #include <filesystem>
 
-#include <core/core.h>
+#include <basikgl/core/core.h>
 
 /**
  * @namespace bskgl::utils

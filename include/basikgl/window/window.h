@@ -8,13 +8,13 @@
 
 #include <unordered_map>
 
-#include <core/core.h>
-#include <window/window_attributes.h>
-#include <window/window_properties.h>
-#include <window/window_callbacks.h>
-#include <input/keyinput.h>
-#include <input/mouseinput.h>
-#include <input/cursor.h>
+#include <basikgl/core/core.h>
+#include <basikgl/window/window_attributes.h>
+#include <basikgl/window/window_properties.h>
+#include <basikgl/window/window_callbacks.h>
+#include <basikgl/input/keyinput.h>
+#include <basikgl/input/mouseinput.h>
+#include <basikgl/input/cursor.h>
 
 /// @brief Forward declaration of GLFWwindow struct.
 struct GLFWwindow;

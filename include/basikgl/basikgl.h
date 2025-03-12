@@ -5,56 +5,56 @@
  */
 
 /// @dir core
-#include <core/core.h>
-#include <core/error_handler.h>
-#include <core/logger.h>
-#include <core/convert_values.h>
+#include <basikgl/core/core.h>
+#include <basikgl/core/error_handler.h>
+#include <basikgl/core/logger.h>
+#include <basikgl/core/convert_values.h>
 
 /// @dir time
-#include <time/timespan.h>
-#include <time/clock.h>
-#include <time/timer.h>
+#include <basikgl/time/timespan.h>
+#include <basikgl/time/clock.h>
+#include <basikgl/time/timer.h>
 
 /// @dir context
-#include <context/asset_manager.h>
-#include <context/context_properties.h>
-#include <context/render_context.h>
-#include <context/context_manager.h>
+#include <basikgl/context/asset_manager.h>
+#include <basikgl/context/context_properties.h>
+#include <basikgl/context/render_context.h>
+#include <basikgl/context/context_manager.h>
 
 /// @dir window
-#include <window/window_attributes.h>
-#include <window/window_properties.h>
-#include <window/window_callbacks.h>
-#include <window/window.h>
+#include <basikgl/window/window_attributes.h>
+#include <basikgl/window/window_properties.h>
+#include <basikgl/window/window_callbacks.h>
+#include <basikgl/window/window.h>
 
 /// @dir gfx
-#include <gfx/vertex.h>
-#include <gfx/vertexbuffer.h>
-#include <gfx/indexbuffer.h>
-#include <gfx/vertexarray.h>
-#include <gfx/shader.h>
+#include <basikgl/gfx/vertex.h>
+#include <basikgl/gfx/vertexbuffer.h>
+#include <basikgl/gfx/indexbuffer.h>
+#include <basikgl/gfx/vertexarray.h>
+#include <basikgl/gfx/shader.h>
 
 /// @brief render
-#include <render/renderer.h>
+#include <basikgl/render/renderer.h>
 
 /// @dir sprite
-#include <sprite/sprite.h>
+#include <basikgl/sprite/sprite.h>
 
 /// @dir gfx/texture
-#include <gfx/texture/texture.h>
-#include <gfx/texture/texture2d.h>
+#include <basikgl/gfx/texture/texture.h>
+#include <basikgl/gfx/texture/texture2d.h>
 
 /// @dir input
-#include <input/keyinput.h>
-#include <input/mouseinput.h>
-#include <input/cursor.h>
+#include <basikgl/input/keyinput.h>
+#include <basikgl/input/mouseinput.h>
+#include <basikgl/input/cursor.h>
 
 /// @dir camera
-#include <camera/camera.h>
-#include <camera/gui_camera.h>
-#include <camera/perspective_camera.h>
-#include <camera/player_camera.h>
+#include <basikgl/camera/camera.h>
+#include <basikgl/camera/gui_camera.h>
+#include <basikgl/camera/perspective_camera.h>
+#include <basikgl/camera/player_camera.h>
 
 /// @dir utils
-#include <utils/utils.h>
-#include <utils/uuid_generator.h>
+#include <basikgl/utils/utils.h>
+#include <basikgl/utils/uuid_generator.h>

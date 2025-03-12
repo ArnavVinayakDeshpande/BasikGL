@@ -8,7 +8,7 @@
 
 #include <chrono>
 
-#include <time/timespan.h>
+#include <basikgl/time/timespan.h>
 
 /**
  * @namespace bskgl

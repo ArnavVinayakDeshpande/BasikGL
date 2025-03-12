@@ -9,7 +9,7 @@
 #include <filesystem>
 #include <memory>
 
-#include <core/core.h>
+#include <basikgl/core/core.h>
 
 /**
  * @namespace bskgl

@@ -1,8 +1,8 @@
 #pragma once
 
-#include <core/core.h>
-#include <input/cursor.h>
-#include <window/window_attributes.h>
+#include <basikgl/core/core.h>
+#include <basikgl/input/cursor.h>
+#include <basikgl/window/window_attributes.h>
 
 namespace bskgl {
     

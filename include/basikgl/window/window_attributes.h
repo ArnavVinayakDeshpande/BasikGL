@@ -8,7 +8,7 @@
 
 #include <glm/vec2.hpp>
 
-#include <core/core.h>
+#include <basikgl/core/core.h>
 
 /**
  * @namespace bskgl

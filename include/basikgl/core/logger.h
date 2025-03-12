@@ -11,8 +11,8 @@
 #include <iostream>
 #include <fstream>
 
-#include <core/core.h>
-#include <color/ansi_color_codes.h>
+#include <basikgl/core/core.h>
+#include <basikgl/color/ansi_color_codes.h>
 
 /**
  * @namespace bskgl

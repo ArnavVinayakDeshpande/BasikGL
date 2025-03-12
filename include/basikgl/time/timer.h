@@ -2,8 +2,8 @@
 
 #include <chrono>
 
-#include <core/core.h>
-#include <time/timespan.h>
+#include <basikgl/core/core.h>
+#include <basikgl/time/timespan.h>
 
 namespace bskgl {
 

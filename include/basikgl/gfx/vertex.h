@@ -9,7 +9,7 @@
 #include <glm/vec2.hpp>
 #include <glm/vec3.hpp>
 
-#include <core/core.h>
+#include <basikgl/core/core.h>
 
 /**
  * @namespace bskgl

@@ -10,9 +10,9 @@
 #include <unordered_map>
 #include <memory>
 
-#include <core/core.h>
-#include <context/render_context.h>
-#include <utils/uuid_generator.h>
+#include <basikgl/core/core.h>
+#include <basikgl/context/render_context.h>
+#include <basikgl/utils/uuid_generator.h>
 
 /**
  * @namespace bskgl

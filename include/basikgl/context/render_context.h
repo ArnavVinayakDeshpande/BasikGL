@@ -6,13 +6,13 @@
 
 #pragma once
 
-#include <core/core.h>
-#include <context/context_properties.h>
-#include <context/asset_manager.h>
-#include <context/gl_tests.h>
-#include <window/window.h>
-#include <render/renderer.h>
-#include <color/color.h>
+#include <basikgl/core/core.h>
+#include <basikgl/context/context_properties.h>
+#include <basikgl/context/asset_manager.h>
+#include <basikgl/context/gl_tests.h>
+#include <basikgl/window/window.h>
+#include <basikgl/render/renderer.h>
+#include <basikgl/color/color.h>
 
 /**
  * @namespace bskgl

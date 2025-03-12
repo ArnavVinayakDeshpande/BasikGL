@@ -10,9 +10,9 @@
 
 #include <glm/vec2.hpp>
 
-#include <core/core.h>
-#include <input/keyinput.h>
-#include <input/mouseinput.h>
+#include <basikgl/core/core.h>
+#include <basikgl/input/keyinput.h>
+#include <basikgl/input/mouseinput.h>
 
 /**
  * @namespace bskgl

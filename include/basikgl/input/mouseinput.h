@@ -6,8 +6,6 @@
 
 #pragma once
 
-#include <core/core.h>
-
 /**
  * @namespace bskgl
  * @brief Primary namespace for BasikGL library.

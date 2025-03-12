@@ -4,9 +4,9 @@
 
 #pragma once
 
-#include <core/core.h>
-#include <window/window_properties.h>
-#include <color/color.h>
+#include <basikgl/core/core.h>
+#include <basikgl/window/window_properties.h>
+#include <basikgl/color/color.h>
 
 /**
  * @namespace bskgl

@@ -8,10 +8,10 @@
 
 #include <memory>
 
-#include <core/core.h>
-#include <gfx/asset.h>
-#include <gfx/vertexbuffer.h>
-#include <gfx/indexbuffer.h>
+#include <basikgl/core/core.h>
+#include <basikgl/gfx/asset.h>
+#include <basikgl/gfx/vertexbuffer.h>
+#include <basikgl/gfx/indexbuffer.h>
 
 /**
  * @namespace bskgl
