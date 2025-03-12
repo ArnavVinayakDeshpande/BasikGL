@@ -34,7 +34,7 @@
 #include <basikgl/gfx/vertexarray.h>
 #include <basikgl/gfx/shader.h>
 
-/// @brief render
+/// @dir render
 #include <basikgl/render/renderer.h>
 
 /// @dir sprite
@@ -54,6 +54,10 @@
 #include <basikgl/camera/gui_camera.h>
 #include <basikgl/camera/perspective_camera.h>
 #include <basikgl/camera/player_camera.h>
+
+/// @dir color
+#include <basikgl/color/color.h>
+#include <basikgl/color/ansi_color_codes.h>
 
 /// @dir utils
 #include <basikgl/utils/utils.h>
